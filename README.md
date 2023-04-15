@@ -6,7 +6,7 @@ First of all, my very soul, what you call *source code*, requires two tools with
 + Requests
 `pip install requests`
 
-+ BeautifulSoup4
++ BeautifulSoup
 `sudo pip3 install beautifulsoup`
 or
 `sudo apt-get install python3-bs4`
