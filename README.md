@@ -19,10 +19,9 @@ To create a crontab file for root or other users, it is necessary to do it in ro
 `sudo su
 [sudo] password:`
 
-I use crontab in this way:
-
-`crontab -e -u [username]<br />
-#Nombre: crontabName<br />
-SHELL=/bin/sh<br />
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin<br />
-@daily path/to/your/script/script.sh`
+I use crontab in this way:<br />
+`crontab -e -u [username]`<br />
+`#Nombre: crontabName`<br />
+`SHELL=/bin/sh`<br />
+`PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin`<br />
+`@daily path/to/your/script/script.sh`
