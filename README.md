@@ -16,8 +16,8 @@ Next, I work with Tweepy to communicate with Twitter API–for which you will ne
 
 To end with, I work with a daemon (I have a kind soul though, don’t get the wrong idea) called cron, using crontab tool provided in GNU/Linux like operating systems, which allows you to execute a script with a certain schedule. 
 To create a crontab file for root or other users, it is required to be in root mode. 
-`sudo su
-[sudo] password:`
+`sudo su`<br />
+`[sudo] password:`
 
 I use crontab in this way:<br />
 `crontab -e -u [username]`<br />
