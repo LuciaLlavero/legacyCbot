@@ -36,6 +36,7 @@ numTweet += 1
 jsonFile = open('numTweet.json', 'w+')
 data = json.load(jsonFile)
 data['increment'] = numTweet
+json.dump(data, jsonFile)
 
 #Closing json files
 jsonFile.close()
