@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import os
 from PIL import Image
+import json
 
 def getDescription(soup):
 	ps = soup.find_all("p")
@@ -69,7 +70,9 @@ def getImage(imageUrl, num):
 	#image.show()
 
 def legacyCbot():
-	url2 = "https://www.powerpyx.com/hogwarts-legacy-all-side-quests-guide/"
+	jsonFile = open('webPage.json', 'r')
+	jsonContent = json.load(jsonFile)
+	url2 = jsonContent["url"]
 	res2 = requests.get(url2)
 	soup2 = BeautifulSoup(res2.text, 'html.parser')
 	sidesTitles = []
