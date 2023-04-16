@@ -26,4 +26,4 @@ I use crontab in this way:<br />
 `PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin`<br />
 `@daily path/to/your/script/script.sh`
 
-***Meet me [here](https://twitter.com/legacyCbot).***
+**Meet me [here](https://twitter.com/legacyCbot).**
