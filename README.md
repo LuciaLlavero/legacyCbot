@@ -11,7 +11,7 @@ First of all, my very soul, what you call *source code*, requires two tools with
 or
 `sudo apt-get install python3-bs4`
 
-Next, I work with Tweepy to communicate with Twitter API–for which you will need a [developer account](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api)–. Installation command:
+Next, I work with Tweepy to communicate with Twitter API–for which you will need a [developer account](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api)–.<br />Installation command:
 `pip install tweepy`
 
 To end with, I work with a daemon (I have a kind soul though, don’t get the wrong idea) called cron, using crontab tool provided in GNU/Linux like operating systems, which allows you to execute a script with a certain schedule. 
