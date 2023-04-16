@@ -72,7 +72,7 @@ def getImage(imageUrl, num):
 def legacyCbot():
 	jsonFile = open('webPage.json', 'r')
 	jsonContent = json.load(jsonFile)
-	url2 = jsonContent["url"]
+	url2 = jsonContent['url']
 	res2 = requests.get(url2)
 	soup2 = BeautifulSoup(res2.text, 'html.parser')
 	sidesTitles = []
