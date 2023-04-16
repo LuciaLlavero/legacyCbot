@@ -4,7 +4,7 @@ import os
 import json
 
 #Variables for accessing twitter API
-jsonKeys = open('keys.json')
+jsonKeys = open('keys.json', 'r')
 keys = json.load(jsonKeys)
 
 #Authenticating to access the twitter API
@@ -14,9 +14,10 @@ api = tweepy.Client(consumer_key=keys['consumerKey'],
                     access_token_secret=keys['accessTokenSecret'])
 
 #Getting the number of the next tweet stored in json file
-jsonFile = open('numTweet.json')
+jsonFile = open('numTweet.json', 'r')
 data = json.load(jsonFile)
 numTweet = data['increment']
+jsonFile.close()
 
 #Checking if the text file exist
 textFileExist = False
@@ -32,8 +33,10 @@ if(textFileExist == True):
 
 #Updating the tweet number to the next
 numTweet += 1
-jsonFile['increment'] = numTweet
+jsonFile = open('numTweet.json', 'w+')
+data = json.load(jsonFile)
+data['increment'] = numTweet
 
-#Closing files
-jsonKeys.close()
+#Closing json files
 jsonFile.close()
+jsonKeys.close()
