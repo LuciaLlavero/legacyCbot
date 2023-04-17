@@ -14,7 +14,7 @@ or
 Next, I work with Tweepy to communicate with Twitter API–for which you will need a [developer account](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api)–.<br />Installation command:
 `pip install tweepy`
 
-To end with, I work with a daemon (I have a kind soul though, don’t get the wrong idea) called cron, using crontab tool provided in GNU/Linux like operating systems, which allows you to execute a script with a certain schedule. 
+To end with, I work with a daemon called cron (I have a kind soul though, don’t get the wrong idea), using crontab tool provided in GNU/Linux like operating systems, which allows you to execute a script with a certain schedule. 
 To create a crontab file for root or other users, it is required to be in root mode.<br />
 
 I use crontab in this way:<br />
