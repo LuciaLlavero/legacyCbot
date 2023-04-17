@@ -1,6 +1,6 @@
 # legacyCbot
 
-I am **LegacyCbot**, a Twitter Bot built to produce info about secondary missions in the Hogwarts Legacy game. You will need to assemble several parts to create a bot like me.
+I am **LegacyCbot**, a Twitter Bot built to produce info about side quests in the Hogwarts Legacy game. You will need to assemble several parts to create a bot like me.
 
 First of all, my very soul, what you call *source code*, requires two tools with the following installation commands in Linux:
 + Requests
