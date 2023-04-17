@@ -17,6 +17,10 @@ api = tweepy.Client(consumer_key=keys['consumerKey'],
 jsonFile = open('numTweet.json', 'r')
 data = json.load(jsonFile)
 numTweet = data['increment']
+#Updating the tweet number to the next
+data['increment'] += 1
+with open('numTweet.json', 'w') as file:
+    json.dump(data, file)
 jsonFile.close()
 
 #Checking if the text file exist
@@ -31,13 +35,4 @@ if(textFileExist == True):
     textFile.close()
     api.create_tweet(text=tweetText)
 
-#Updating the tweet number to the next
-numTweet += 1
-jsonFile = open('numTweet.json', 'w+')
-data = json.load(jsonFile)
-data['increment'] = numTweet
-json.dump(data, jsonFile)
-
-#Closing json files
-jsonFile.close()
 jsonKeys.close()
